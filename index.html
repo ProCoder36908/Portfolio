@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Umar's Dev Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Share Tech Mono', monospace;
+      background-color: #0f0f0f;
+      color: #33ff33;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #1a1a1a;
+      box-shadow: 0 2px 4px rgba(0, 255, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid #33ff33;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #33ff33;
+    }
+
+    nav a {
+      margin-left: 1rem;
+      text-decoration: none;
+      color: #00ffcc;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 960px;
+      margin: auto;
+    }
+
+    .hero {
+      text-align: center;
+      padding-top: 4rem;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      color: #66ff66;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      color: #00ffaa;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .card {
+      background-color: #121212;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      border: 1px solid #33ff33;
+      box-shadow: 0 0 15px rgba(0, 255, 0, 0.2);
+      transition: 0.3s ease-in-out;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 20px rgba(0, 255, 0, 0.4);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #00ffcc;
+    }
+
+    .card p {
+      margin-bottom: 1rem;
+      color: #d1fae5;
+    }
+
+    .btn-github {
+      cursor: pointer;
+      display: inline-block;
+      border: none;
+      border-radius: 4px;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      font-size: 0.9rem;
+      margin-right: 0.5rem;
+      background-color: #000000;
+      color: #33ff33;
+      box-shadow: 0 0 5px rgba(51, 255, 51, 0.6);
+      text-decoration: none;
+      transition: 0.3s ease-in-out;
+    }
+
+    .btn-github:hover {
+      background-color: #33ff33;
+      color: #000000;
+      box-shadow: 0 0 10px rgba(51, 255, 51, 1);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Umar Raheel</h1>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#stack">Stack</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Hey, I’m Umar — a teen dev building cool projects</h2>
+    <p>Check out my games, tools, and experiments below.</p>
+  </section>
+
+  <section id="projects">
+    <h2>🚀 Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Student Buddy</h3>
+        <p>Student toolset: GPA calculator, agenda, what-if planner & more.</p>
+        <a href="https://studentbud.netlify.app/student.html" class="btn-github">Live</a>
+        <a href="https://github.com/ProCoder36908/Student-buddy" class="btn-github">GitHub</a>
+      </div>
+      <div class="card">
+        <h3>Dev Cockpit Toolbox</h3>
+        <p>Developer productivity dashboard (utilities, links, and tools).</p>
+        <a href="https://dev-cockpit-toolbox.lovable.app" class="btn-github">Live</a>
+        <a href="https://github.com/ProCoder36908/dev-cockpit-toolbox" class="btn-github">GitHub</a>
+      </div>
+      <div class="card">
+        <h3>Saleem Streetwear Hub</h3>
+        <p>Streetwear ecommerce UI prototype using TypeScript.</p>
+        <a href="https://saleem-streetwear-hub.lovable.app/" class="btn-github">Live</a>
+        <a href="https://github.com/ProCoder36908/saleem-streetwear-hub" class="btn-github">GitHub</a>
+      </div>
+      <div class="card">
+        <h3>Grow a Garden</h3>
+        <p>Idle gardening sim inspired by Roblox. Grow, water, harvest!</p>
+        <a href="https://gardengrow.netlify.app/garden.html" class="btn-github">Live</a>
+        <a href="https://github.com/ProCoder36908/GrowaGarden" class="btn-github">GitHub</a>
+      </div>
+      <div class="card">
+        <h3>MalSim</h3>
+        <p>Fake malware simulation in browser. Terminal vibes.</p>
+        <a href="https://malsim.netlify.app/malism.html" class="btn-github">Live</a>
+        <a href="https://github.com/ProCoder36908/malsim" class="btn-github">GitHub</a>
+      </div>
+      <div class="card">
+        <h3>CyberPet</h3>
+        <p>Tamagotchi-style virtual pet in your browser.</p>
+        <a href="https://cyber-pet.netlify.app/cyber.html" class="btn-github">Live</a>
+        <a href="https://github.com/ProCoder36908/CyberPet" class="btn-github">GitHub</a>
+      </div>
+      <div class="card">
+        <h3>Haker</h3>
+        <p>Terminal-based hacking game for fun and practice.</p>
+        <a href="https://haker12.netlify.app/terminal.html" class="btn-github">Live</a>
+        <a href="https://github.com/ProCoder36908/haker" class="btn-github">GitHub</a>
+      </div>
+      <div class="card">
+        <h3>Bizness</h3>
+        <p>Business sim game. Build an empire or go broke.</p>
+        <a href="https://bizness12.netlify.app/buisness.html" class="btn-github">Live</a>
+        <a href="https://github.com/ProCoder36908/bizness" class="btn-github">GitHub</a>
+      </div>
+      <div class="card">
+        <h3>Glitch</h3>
+        <p>Glitched effects, weird visuals, and digital chaos.</p>
+        <a href="https://glitch12.netlify.app/glitch.html" class="btn-github">Live</a>
+        <a href="https://github.com/ProCoder36908/glitch" class="btn-github">GitHub</a>
+      </div>
+      <div class="card">
+        <h3>Solar</h3>
+        <p>Clicker game about collecting solar energy.</p>
+        <a href="https://solar12.netlify.app" class="btn-github">Live</a>
+        <a href="https://github.com/ProCoder36908/solar" class="btn-github">GitHub</a>
+      </div>
+      <div class="card">
+        <h3>Space Shot</h3>
+        <p>Arcade space shooter — avoid asteroids and fire!</p>
+        <a href="https://space-shot.netlify.app/chaos2.html" class="btn-github">Live</a>
+        <a href="https://github.com/ProCoder36908/space-shot" class="btn-github">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>👋 About Me</h2>
+    <p>I’m Umar, a 14-year-old developer building games and apps with HTML, CSS, and JavaScript. I love making fun and useful tools for students and enjoy learning new tech every day. I’m also working on some polished tools like <strong>Dev Cockpit Toolbox</strong> and <strong>Saleem Streetwear Hub</strong> to level up my TypeScript and UI skills.</p>
+  </section>
+
+  <section id="stack">
+    <h2>🧠 Tech Stack</h2>
+    <p>I use HTML, CSS, JavaScript, TypeScript, and creative builder platforms like <strong>Lovable.dev</strong>, <strong>Windsurf</strong>, and <strong>Vibe Coding</strong>. I like experimenting with terminal aesthetics and building cool UIs with dev vibes.</p>
+  </section>
+
+  <footer style="text-align:center; padding: 2rem; color: #33ff33; background: #0f0f0f; border-top: 1px solid #33ff33;">
+    © 2025 Umar Raheel
+  </footer>
+</body>
+</html>
